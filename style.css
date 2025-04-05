@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    background-color: #00d2c6;
+    padding: 0;
+}
+
+.navbar {
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-nav {
+    padding-left: 0;
+}
+
+.nav-item a {
+    color: white;
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .banner-text h1 {
+        font-size: 2em;
+    }
+
+    .banner-text p {
+        font-size: 1em;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links a {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    nav ul {
+        background-color: #222;
+    }
+
+    .banner-text h1 {
+        font-size: 1.5em;
+    }
+
+    .banner-text p {
+        font-size: 0.9em;
+    }
+
+    .footer a {
+        font-size: 0.8em;
+    }
+
+    .footer-para {
+        font-size: 0.7em;
+    }
+}
+
+/* Existing CSS remains the same */
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    width: 40%; /* Adjust width for better responsiveness */
+    height: 30%;
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.banner-text p {
+    font-size: 1em;
+}
+
+.banner-text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(10, 91, 43, 0.8);
+    width: 41%; /* Adjust width for better responsiveness */
+    padding: 15px; /* Adjust padding for better spacing */
+}
+
+.banner-text2 h1 {
+    font-size: 2.5rem;
+    font-weight: 525;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments for small devices */
+@media (max-width: 100px) {
+    .banner-text h1 {
+        font-size: 2.5rem; /* Smaller font size for tablets */
+    }
+
+    .banner-text p {
+        font-size: 1em;
+    }
+
+    .banner-text2 h1 {
+        font-size: 2rem; /* Smaller font size for tablets */
+    }
+
+    .banner-text2 {
+        width: 80%; /* Adjust width for tablets */
+    }
+}
+
+@media (max-width: 120px) {
+    .banner-text h1 {
+        font-size: 2rem; /* Even smaller font size for mobile */
+    }
+
+    .banner-text p {
+        font-size: 0.9em;
+    }
+
+    .banner-text2 h1 {
+        font-size: 1.5rem; /* Even smaller font size for mobile */
+    }
+
+    .banner-text2 {
+        width: 50%; /* Adjust width for mobile */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .banner-text .btn,
+    .banner-text2 .btn {
+        font-size: 0.9em; /* Adjust button font size for mobile */
+        padding: 8px 16px; /* Adjust button padding for mobile */
+    }
+
+}
+@media (min-width : 400px){
+    .banner-text{
+        width: 100px;
+    }
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-para {
+    font-size: 0.8em;
+    color: #fff;
+    margin-top: 10px;
+}
